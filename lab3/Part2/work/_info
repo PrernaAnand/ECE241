@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Prerna/Documents/Lab3/Part2
+vAdder
+Z1 !s110 1538522783
+!i10b 1
+!s100 kIIYZX:gBZnVDJTLaf7c12
+II^5z9Pj4[gBz7@ERDWlaH0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1538270718
+Z4 8part2.v
+Z5 Fpart2.v
+L0 1
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1538522783.000000
+Z8 !s107 part2.v|
+Z9 !s90 -reportprogress|300|part2.v|
+!i113 1
+Z10 tCvgOpt 0
+n@adder
+vFullAdd
+R1
+!i10b 1
+!s100 hBW<G8SaNj`le<U;hO?Rm1
+Ih3:UEEN;UB5gH3OOS`m1S1
+R2
+R0
+R3
+R4
+R5
+L0 14
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@full@add

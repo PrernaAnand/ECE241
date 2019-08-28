@@ -1,0 +1,378 @@
+|ALU
+SW[0] => B[0].IN2
+SW[1] => B[1].IN2
+SW[2] => B[2].IN2
+SW[3] => B[3].IN2
+SW[4] => A[0].IN2
+SW[5] => A[1].IN2
+SW[6] => A[2].IN2
+SW[7] => A[3].IN2
+LEDR[0] <= ALUout[0].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[1] <= ALUout[1].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[2] <= ALUout[2].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[3] <= ALUout[3].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[4] <= ALUout[4].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[5] <= ALUout[5].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[6] <= ALUout[6].DB_MAX_OUTPUT_PORT_TYPE
+LEDR[7] <= ALUout[7].DB_MAX_OUTPUT_PORT_TYPE
+KEY[0] => Mux0.IN9
+KEY[0] => Mux1.IN9
+KEY[0] => Mux2.IN9
+KEY[0] => Mux3.IN8
+KEY[0] => Mux4.IN9
+KEY[0] => Mux5.IN9
+KEY[0] => Mux6.IN9
+KEY[0] => Mux7.IN9
+KEY[1] => Mux0.IN8
+KEY[1] => Mux1.IN8
+KEY[1] => Mux2.IN8
+KEY[1] => Mux3.IN7
+KEY[1] => Mux4.IN8
+KEY[1] => Mux5.IN8
+KEY[1] => Mux6.IN8
+KEY[1] => Mux7.IN8
+KEY[2] => Mux0.IN7
+KEY[2] => Mux1.IN7
+KEY[2] => Mux2.IN7
+KEY[2] => Mux3.IN6
+KEY[2] => Mux4.IN7
+KEY[2] => Mux5.IN7
+KEY[2] => Mux6.IN7
+KEY[2] => Mux7.IN7
+HEX0[0] <= Display:D1.hex
+HEX0[1] <= Display:D1.hex
+HEX0[2] <= Display:D1.hex
+HEX0[3] <= Display:D1.hex
+HEX0[4] <= Display:D1.hex
+HEX0[5] <= Display:D1.hex
+HEX0[6] <= Display:D1.hex
+HEX1[0] <= <GND>
+HEX1[1] <= <GND>
+HEX1[2] <= <GND>
+HEX1[3] <= <GND>
+HEX1[4] <= <GND>
+HEX1[5] <= <GND>
+HEX1[6] <= <GND>
+HEX2[0] <= Display:D2.hex
+HEX2[1] <= Display:D2.hex
+HEX2[2] <= Display:D2.hex
+HEX2[3] <= Display:D2.hex
+HEX2[4] <= Display:D2.hex
+HEX2[5] <= Display:D2.hex
+HEX2[6] <= Display:D2.hex
+HEX3[0] <= <GND>
+HEX3[1] <= <GND>
+HEX3[2] <= <GND>
+HEX3[3] <= <GND>
+HEX3[4] <= <GND>
+HEX3[5] <= <GND>
+HEX3[6] <= <GND>
+HEX4[0] <= Display:D3.hex
+HEX4[1] <= Display:D3.hex
+HEX4[2] <= Display:D3.hex
+HEX4[3] <= Display:D3.hex
+HEX4[4] <= Display:D3.hex
+HEX4[5] <= Display:D3.hex
+HEX4[6] <= Display:D3.hex
+HEX5[0] <= Display:D4.hex
+HEX5[1] <= Display:D4.hex
+HEX5[2] <= Display:D4.hex
+HEX5[3] <= Display:D4.hex
+HEX5[4] <= Display:D4.hex
+HEX5[5] <= Display:D4.hex
+HEX5[6] <= Display:D4.hex
+
+
+|ALU|Adder:X1
+Cin => Cin.IN1
+A[0] => A[0].IN1
+A[1] => A[1].IN1
+A[2] => A[2].IN1
+A[3] => A[3].IN1
+B[0] => B[0].IN1
+B[1] => B[1].IN1
+B[2] => B[2].IN1
+B[3] => B[3].IN1
+S[0] <= FullAdd:x4.s
+S[1] <= FullAdd:x3.s
+S[2] <= FullAdd:x2.s
+S[3] <= FullAdd:x1.s
+Cout <= FullAdd:x4.cout
+
+
+|ALU|Adder:X1|FullAdd:x1
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|Adder:X1|FullAdd:x2
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|Adder:X1|FullAdd:x3
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|Adder:X1|FullAdd:x4
+cin => s.IN1
+cin => cout.IN0
+cin => cout.IN0
+a => s.IN0
+a => cout.IN0
+a => cout.IN1
+b => s.IN1
+b => cout.IN1
+b => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|Display:D1
+I[0] => I[0].IN1
+I[1] => I[1].IN1
+I[2] => I[2].IN1
+I[3] => I[3].IN1
+hex[0] <= HEX:H1.h0
+hex[1] <= HEX:H1.h1
+hex[2] <= HEX:H1.h2
+hex[3] <= HEX:H1.h3
+hex[4] <= HEX:H1.h4
+hex[5] <= HEX:H1.h5
+hex[6] <= HEX:H1.h6
+
+
+|ALU|Display:D1|HEX:H1
+c0 => h0.IN0
+c0 => h0.IN0
+c0 => h0.IN0
+c0 => h0.IN0
+c1 => h0.IN1
+c1 => h0.IN1
+c1 => h0.IN1
+c1 => h0.IN1
+c2 => h0.IN1
+c2 => h0.IN1
+c2 => h0.IN1
+c2 => h4.IN1
+c2 => h0.IN1
+c2 => h1.IN1
+c2 => h1.IN1
+c2 => h2.IN1
+c3 => h0.IN1
+c3 => h1.IN1
+c3 => h1.IN1
+c3 => h1.IN1
+c3 => h2.IN1
+c3 => h3.IN1
+c3 => h6.IN1
+c3 => h0.IN1
+c3 => h0.IN1
+c3 => h0.IN1
+c3 => h1.IN1
+c3 => h1.IN1
+c3 => h3.IN1
+c3 => h4.IN1
+c3 => h4.IN1
+h0 <= h0.DB_MAX_OUTPUT_PORT_TYPE
+h1 <= h1.DB_MAX_OUTPUT_PORT_TYPE
+h2 <= h2.DB_MAX_OUTPUT_PORT_TYPE
+h3 <= h3.DB_MAX_OUTPUT_PORT_TYPE
+h4 <= h4.DB_MAX_OUTPUT_PORT_TYPE
+h5 <= h5.DB_MAX_OUTPUT_PORT_TYPE
+h6 <= h6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|Display:D2
+I[0] => I[0].IN1
+I[1] => I[1].IN1
+I[2] => I[2].IN1
+I[3] => I[3].IN1
+hex[0] <= HEX:H1.h0
+hex[1] <= HEX:H1.h1
+hex[2] <= HEX:H1.h2
+hex[3] <= HEX:H1.h3
+hex[4] <= HEX:H1.h4
+hex[5] <= HEX:H1.h5
+hex[6] <= HEX:H1.h6
+
+
+|ALU|Display:D2|HEX:H1
+c0 => h0.IN0
+c0 => h0.IN0
+c0 => h0.IN0
+c0 => h0.IN0
+c1 => h0.IN1
+c1 => h0.IN1
+c1 => h0.IN1
+c1 => h0.IN1
+c2 => h0.IN1
+c2 => h0.IN1
+c2 => h0.IN1
+c2 => h4.IN1
+c2 => h0.IN1
+c2 => h1.IN1
+c2 => h1.IN1
+c2 => h2.IN1
+c3 => h0.IN1
+c3 => h1.IN1
+c3 => h1.IN1
+c3 => h1.IN1
+c3 => h2.IN1
+c3 => h3.IN1
+c3 => h6.IN1
+c3 => h0.IN1
+c3 => h0.IN1
+c3 => h0.IN1
+c3 => h1.IN1
+c3 => h1.IN1
+c3 => h3.IN1
+c3 => h4.IN1
+c3 => h4.IN1
+h0 <= h0.DB_MAX_OUTPUT_PORT_TYPE
+h1 <= h1.DB_MAX_OUTPUT_PORT_TYPE
+h2 <= h2.DB_MAX_OUTPUT_PORT_TYPE
+h3 <= h3.DB_MAX_OUTPUT_PORT_TYPE
+h4 <= h4.DB_MAX_OUTPUT_PORT_TYPE
+h5 <= h5.DB_MAX_OUTPUT_PORT_TYPE
+h6 <= h6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|Display:D3
+I[0] => I[0].IN1
+I[1] => I[1].IN1
+I[2] => I[2].IN1
+I[3] => I[3].IN1
+hex[0] <= HEX:H1.h0
+hex[1] <= HEX:H1.h1
+hex[2] <= HEX:H1.h2
+hex[3] <= HEX:H1.h3
+hex[4] <= HEX:H1.h4
+hex[5] <= HEX:H1.h5
+hex[6] <= HEX:H1.h6
+
+
+|ALU|Display:D3|HEX:H1
+c0 => h0.IN0
+c0 => h0.IN0
+c0 => h0.IN0
+c0 => h0.IN0
+c1 => h0.IN1
+c1 => h0.IN1
+c1 => h0.IN1
+c1 => h0.IN1
+c2 => h0.IN1
+c2 => h0.IN1
+c2 => h0.IN1
+c2 => h4.IN1
+c2 => h0.IN1
+c2 => h1.IN1
+c2 => h1.IN1
+c2 => h2.IN1
+c3 => h0.IN1
+c3 => h1.IN1
+c3 => h1.IN1
+c3 => h1.IN1
+c3 => h2.IN1
+c3 => h3.IN1
+c3 => h6.IN1
+c3 => h0.IN1
+c3 => h0.IN1
+c3 => h0.IN1
+c3 => h1.IN1
+c3 => h1.IN1
+c3 => h3.IN1
+c3 => h4.IN1
+c3 => h4.IN1
+h0 <= h0.DB_MAX_OUTPUT_PORT_TYPE
+h1 <= h1.DB_MAX_OUTPUT_PORT_TYPE
+h2 <= h2.DB_MAX_OUTPUT_PORT_TYPE
+h3 <= h3.DB_MAX_OUTPUT_PORT_TYPE
+h4 <= h4.DB_MAX_OUTPUT_PORT_TYPE
+h5 <= h5.DB_MAX_OUTPUT_PORT_TYPE
+h6 <= h6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ALU|Display:D4
+I[0] => I[0].IN1
+I[1] => I[1].IN1
+I[2] => I[2].IN1
+I[3] => I[3].IN1
+hex[0] <= HEX:H1.h0
+hex[1] <= HEX:H1.h1
+hex[2] <= HEX:H1.h2
+hex[3] <= HEX:H1.h3
+hex[4] <= HEX:H1.h4
+hex[5] <= HEX:H1.h5
+hex[6] <= HEX:H1.h6
+
+
+|ALU|Display:D4|HEX:H1
+c0 => h0.IN0
+c0 => h0.IN0
+c0 => h0.IN0
+c0 => h0.IN0
+c1 => h0.IN1
+c1 => h0.IN1
+c1 => h0.IN1
+c1 => h0.IN1
+c2 => h0.IN1
+c2 => h0.IN1
+c2 => h0.IN1
+c2 => h4.IN1
+c2 => h0.IN1
+c2 => h1.IN1
+c2 => h1.IN1
+c2 => h2.IN1
+c3 => h0.IN1
+c3 => h1.IN1
+c3 => h1.IN1
+c3 => h1.IN1
+c3 => h2.IN1
+c3 => h3.IN1
+c3 => h6.IN1
+c3 => h0.IN1
+c3 => h0.IN1
+c3 => h0.IN1
+c3 => h1.IN1
+c3 => h1.IN1
+c3 => h3.IN1
+c3 => h4.IN1
+c3 => h4.IN1
+h0 <= h0.DB_MAX_OUTPUT_PORT_TYPE
+h1 <= h1.DB_MAX_OUTPUT_PORT_TYPE
+h2 <= h2.DB_MAX_OUTPUT_PORT_TYPE
+h3 <= h3.DB_MAX_OUTPUT_PORT_TYPE
+h4 <= h4.DB_MAX_OUTPUT_PORT_TYPE
+h5 <= h5.DB_MAX_OUTPUT_PORT_TYPE
+h6 <= h6.DB_MAX_OUTPUT_PORT_TYPE
+
+

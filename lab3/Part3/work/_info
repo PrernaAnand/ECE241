@@ -1,0 +1,115 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Prerna/Documents/Lab3/Part3
+vAdder
+Z1 !s110 1538523396
+!i10b 1
+!s100 =?b1b6gK@O^TT6WSTfSjS2
+IcSjDS`[3V8jDXdWP]WbzO1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1538515289
+Z4 8part3.v
+Z5 Fpart3.v
+L0 61
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1538523396.000000
+Z8 !s107 part3.v|
+Z9 !s90 -reportprogress|300|part3.v|
+!i113 1
+Z10 tCvgOpt 0
+n@adder
+vALU
+!s110 1539718231
+!i10b 1
+!s100 [Qc8Ymhi@cAQlPj6?WBf=1
+I^zGz@[5Ykh;gS4>>6T3b32
+R2
+dC:/Users/Prerna/Desktop/CAD/Lab3/Part3
+w1539146462
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+!s108 1539718231.000000
+R8
+R9
+!i113 1
+R10
+n@a@l@u
+vDisplay
+R1
+!i10b 1
+!s100 mG3hWRn;SCCMMJJo23SV@2
+I?24W@i7DWjjk2_MTjmDF[1
+R2
+R0
+R3
+R4
+R5
+L0 85
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@display
+vFullAdd
+R1
+!i10b 1
+!s100 lcej63[0Xi_Y@zlH98dRn2
+I5E3VFak6JXaHZRMA]7Bmm3
+R2
+R0
+R3
+R4
+R5
+L0 76
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@full@add
+vHEX
+R1
+!i10b 1
+!s100 9o:2VNNV^G<E_N1>IcXCX1
+IR:;PHccnE@^UEMmG9F7Mn0
+R2
+R0
+R3
+R4
+R5
+L0 93
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@h@e@x
