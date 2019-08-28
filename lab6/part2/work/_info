@@ -1,0 +1,110 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Prerna/Desktop/CAD/Lab6/part2
+vcontrol
+Z1 !s110 1540965554
+!i10b 1
+!s100 NIE4zTj@=^mKoMbF?^?]N0
+I8z^[`_J8fCe06Ec>el>Fm2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1540964924
+Z4 8fpga_top.v
+Z5 Ffpga_top.v
+L0 99
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1540965554.000000
+Z8 !s107 fpga_top.v|
+Z9 !s90 -reportprogress|300|fpga_top.v|
+!i113 1
+Z10 tCvgOpt 0
+vdatapath
+R1
+!i10b 1
+!s100 _d:LgPhiFM0Soi6ccO6;j1
+IKC=N1HLLUY3oBWXU3MejU0
+R2
+R0
+R3
+R4
+R5
+L0 225
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vfpga_top
+R1
+!i10b 1
+!s100 dGBdk6ccl2m[_7AGKI>E<2
+I]<E=DW`iC4Y576Wz;k?a<3
+R2
+R0
+R3
+R4
+R5
+L0 9
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vhex_decoder
+R1
+!i10b 1
+!s100 Di6G]0ZhDCRk<@RlmVPW71
+IAIJU;RJ[FKg=37H:9Cj^C0
+R2
+R0
+R3
+R4
+R5
+L0 322
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vpart2
+R1
+!i10b 1
+!s100 R9VWiN;B]m8_N:kHUgA[61
+I7eoF0QB=c8L7De9SWRez:0
+R2
+R0
+R3
+R4
+R5
+L0 45
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10

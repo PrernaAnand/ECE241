@@ -1,0 +1,152 @@
+// Part 2 skeleton
+
+module fill
+	(
+		CLOCK_50,						//	On Board 50 MHz
+		// Your inputs and outputs here
+		KEY,							// On Board Keys
+		
+		// The ports below are for the VGA output.  Do not change.
+		VGA_CLK,   						//	VGA Clock
+		VGA_HS,							//	VGA H_SYNC
+		VGA_VS,							//	VGA V_SYNC
+		VGA_BLANK_N,						//	VGA BLANK
+		VGA_SYNC_N,						//	VGA SYNC
+		VGA_R,   						//	VGA Red[9:0]
+		VGA_G,	 						//	VGA Green[9:0]
+		VGA_B   						//	VGA Blue[9:0]
+	);
+
+	input			CLOCK_50;				//	50 MHz
+	input	[3:0]	KEY;					
+	// Declare your inputs and outputs here
+	input [9:0] SW;
+	
+	
+	// Do not change the following outputs
+	output			VGA_CLK;   				//	VGA Clock
+	output			VGA_HS;					//	VGA H_SYNC
+	output			VGA_VS;					//	VGA V_SYNC
+	output			VGA_BLANK_N;				//	VGA BLANK
+	output			VGA_SYNC_N;				//	VGA SYNC
+	output	[7:0]	VGA_R;   				//	VGA Red[7:0] Changed from 10 to 8-bit DAC
+	output	[7:0]	VGA_G;	 				//	VGA Green[7:0]
+	output	[7:0]	VGA_B;   				//	VGA Blue[7:0]
+	
+	wire resetn;
+	assign resetn = KEY[0];
+	
+	// Create the colour, x, y and writeEn wires that are inputs to the controller.
+
+	wire [2:0] colour;
+	wire [7:0] x;
+	wire [6:0] y;
+	wire writeEn;
+
+	// Create an Instance of a VGA controller - there can be only one!
+	// Define the number of colours as well as the initial background
+	// image file (.MIF) for the controller.
+	vga_adapter VGA(
+			.resetn(resetn),
+			.clock(CLOCK_50),
+			.colour(colour),
+			.x(x),
+			.y(y),
+			.plot(writeEn),
+			/* Signals for the DAC to drive the monitor. */
+			.VGA_R(VGA_R),
+			.VGA_G(VGA_G),
+			.VGA_B(VGA_B),
+			.VGA_HS(VGA_HS),
+			.VGA_VS(VGA_VS),
+			.VGA_BLANK(VGA_BLANK_N),
+			.VGA_SYNC(VGA_SYNC_N),
+			.VGA_CLK(VGA_CLK));
+		defparam VGA.RESOLUTION = "160x120";
+		defparam VGA.MONOCHROME = "FALSE";
+		defparam VGA.BITS_PER_COLOUR_CHANNEL = 1;
+		defparam VGA.BACKGROUND_IMAGE = "black.mif";
+			
+	// Put your code here. Your code should produce signals x,y,colour and writeEn
+	// for the VGA controller, in addition to any other functionality your design may require.
+	
+	
+endmodule
+
+module FSM_control(reset, clock, plot, ld_x, ld_y, ld_c, ld_counter);
+ input reset;
+ input clock;
+ input plot;
+ input black;
+ output enable;
+ 
+ reg [1:0] current_state, next_state;
+ output reg ld_a, ld_b, ld_c, ld_counter;
+ 
+ localparam
+  LOAD_X = 2'd0,
+  LOAD_Y = 2'd1,
+  DRAW = 2'd2;
+ 
+ always@(*)
+ begin: state_table
+        case(current_state) 
+		  LOAD_X: next_state = plot ? LOAD_Y : LOAD_X;
+		  LOAD_y: next_state = plot ? DRAW : LOAD_Y;
+		  DRAW: next_state = LOAD_X;
+		  default: next_state = LOAD_X;
+		  endcase
+ end 
+ 
+ always @(*)
+    begin: enable_signals
+        ld_x = 1'b0;
+        ld_y = 1'b0;
+        ld_c = 1'b0;
+		  ld_counter = 1'b0;
+		  
+		  case (current_state)
+            LOAD_X: begin
+                ld_x = 1'b1;
+                end
+            LOAD_Y: begin
+                ld_y = 1'b1;
+					 ld_c = 1'b1;
+                end
+				DRAW: begin
+					 ld_counter = 1'b1;
+					 end
+         endcase
+     end
+	 
+endmodule
+
+
+module FSM_datapath(
+
+
+
+module Adder(out, in);
+  
+  input [4:0] in;
+  output [9:0] out;
+  wire [2:0] W;
+  
+  FullAdd x1(.Cin(in[8]), .A(in[4]), .B(in[0]), .Cout(W[0]), .S(out[0]));
+  FullAdd x2(.Cin(W[0]), .A(on[5]), .B(in[1]), .Cout(W[1]), .S(out[1]));
+  FullAdd x3(.Cin(W[1]), .A(in[6]), .B(in[2]), .Cout(W[2]), .S(out[2]));
+  FullAdd x4(.Cin(W[2]), .A(in[7]), .B(in[3]), .Cout(out[9]), .S(out[3]));
+
+endmodule
+  
+module FullAdd(Cin, A, B, S, Cout);
+
+  input Cin, A, B;
+  output S, Cout;
+  
+  assign S = A^B^Cin;
+  assign Cout = (A&B)|(A&Cin)|(B&Cin);
+  
+endmodule
+
+module counter_4bit(enable, reset, q); //q - output
