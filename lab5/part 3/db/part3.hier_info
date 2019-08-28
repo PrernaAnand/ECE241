@@ -1,0 +1,408 @@
+|part3
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+SW[2] => SW[2].IN1
+KEY[0] => KEY[0].IN1
+KEY[1] => KEY[1].IN1
+LEDR[0] <= shiftRegister:unit2.shiftOut
+LEDR[1] <= <GND>
+CLOCK_50 => CLOCK_50.IN1
+
+
+|part3|letterMux:unit1
+s1 => Decoder0.IN0
+s1 => Decoder1.IN0
+s2 => Decoder0.IN1
+s2 => Decoder1.IN1
+s3 => Decoder0.IN2
+out[0] <= <VCC>
+out[1] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+out[2] <= <VCC>
+out[3] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[4] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[5] <= out.DB_MAX_OUTPUT_PORT_TYPE
+out[6] <= Decoder1.DB_MAX_OUTPUT_PORT_TYPE
+out[7] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+out[8] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+out[9] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[10] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+out[11] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+out[12] <= Decoder0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|rateDivideCount:comb_3
+pulseWidth[0] => Equal0.IN25
+pulseWidth[1] => Equal0.IN24
+pulseWidth[2] => Equal0.IN23
+pulseWidth[3] => Equal0.IN22
+pulseWidth[4] => Equal0.IN21
+pulseWidth[5] => Equal0.IN20
+pulseWidth[6] => Equal0.IN19
+pulseWidth[7] => Equal0.IN18
+pulseWidth[8] => Equal0.IN17
+pulseWidth[9] => Equal0.IN16
+pulseWidth[10] => Equal0.IN15
+pulseWidth[11] => Equal0.IN14
+pulseWidth[12] => Equal0.IN13
+pulseWidth[13] => Equal0.IN12
+pulseWidth[14] => Equal0.IN11
+pulseWidth[15] => Equal0.IN10
+pulseWidth[16] => Equal0.IN9
+pulseWidth[17] => Equal0.IN8
+pulseWidth[18] => Equal0.IN7
+pulseWidth[19] => Equal0.IN6
+pulseWidth[20] => Equal0.IN5
+pulseWidth[21] => Equal0.IN4
+pulseWidth[22] => Equal0.IN3
+pulseWidth[23] => Equal0.IN2
+pulseWidth[24] => Equal0.IN1
+pulseWidth[25] => Equal0.IN0
+pulse <= pulse~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => pulse~reg0.CLK
+clk => counter[0].CLK
+clk => counter[1].CLK
+clk => counter[2].CLK
+clk => counter[3].CLK
+clk => counter[4].CLK
+clk => counter[5].CLK
+clk => counter[6].CLK
+clk => counter[7].CLK
+clk => counter[8].CLK
+clk => counter[9].CLK
+clk => counter[10].CLK
+clk => counter[11].CLK
+clk => counter[12].CLK
+clk => counter[13].CLK
+clk => counter[14].CLK
+clk => counter[15].CLK
+clk => counter[16].CLK
+clk => counter[17].CLK
+clk => counter[18].CLK
+clk => counter[19].CLK
+clk => counter[20].CLK
+clk => counter[21].CLK
+clk => counter[22].CLK
+clk => counter[23].CLK
+clk => counter[24].CLK
+clk => counter[25].CLK
+
+
+|part3|shiftRegister:unit2
+data[0] => data[0].IN1
+data[1] => data[1].IN1
+data[2] => data[2].IN1
+data[3] => data[3].IN1
+data[4] => data[4].IN1
+data[5] => data[5].IN1
+data[6] => data[6].IN1
+data[7] => data[7].IN1
+data[8] => data[8].IN1
+data[9] => data[9].IN1
+data[10] => data[10].IN1
+data[11] => data[11].IN1
+data[12] => data[12].IN1
+en => en.IN13
+load => load.IN13
+reset => reset.IN13
+shiftOut <= subcircuit:unit13.out
+
+
+|part3|shiftRegister:unit2|subcircuit:unit1
+loadValue => loadValue.IN1
+Qprev => Qprev.IN1
+loadn => loadn.IN1
+resetn => resetn.IN1
+Enable => Enable.IN1
+out <= Register:r1.O
+
+
+|part3|shiftRegister:unit2|subcircuit:unit1|mux2to1:m2
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|shiftRegister:unit2|subcircuit:unit1|Register:r1
+Reset_b => O.OUTPUTSELECT
+I => O.DATAB
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+enable => O~reg0.CLK
+
+
+|part3|shiftRegister:unit2|subcircuit:unit2
+loadValue => loadValue.IN1
+Qprev => Qprev.IN1
+loadn => loadn.IN1
+resetn => resetn.IN1
+Enable => Enable.IN1
+out <= Register:r1.O
+
+
+|part3|shiftRegister:unit2|subcircuit:unit2|mux2to1:m2
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|shiftRegister:unit2|subcircuit:unit2|Register:r1
+Reset_b => O.OUTPUTSELECT
+I => O.DATAB
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+enable => O~reg0.CLK
+
+
+|part3|shiftRegister:unit2|subcircuit:unit3
+loadValue => loadValue.IN1
+Qprev => Qprev.IN1
+loadn => loadn.IN1
+resetn => resetn.IN1
+Enable => Enable.IN1
+out <= Register:r1.O
+
+
+|part3|shiftRegister:unit2|subcircuit:unit3|mux2to1:m2
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|shiftRegister:unit2|subcircuit:unit3|Register:r1
+Reset_b => O.OUTPUTSELECT
+I => O.DATAB
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+enable => O~reg0.CLK
+
+
+|part3|shiftRegister:unit2|subcircuit:unit4
+loadValue => loadValue.IN1
+Qprev => Qprev.IN1
+loadn => loadn.IN1
+resetn => resetn.IN1
+Enable => Enable.IN1
+out <= Register:r1.O
+
+
+|part3|shiftRegister:unit2|subcircuit:unit4|mux2to1:m2
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|shiftRegister:unit2|subcircuit:unit4|Register:r1
+Reset_b => O.OUTPUTSELECT
+I => O.DATAB
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+enable => O~reg0.CLK
+
+
+|part3|shiftRegister:unit2|subcircuit:unit5
+loadValue => loadValue.IN1
+Qprev => Qprev.IN1
+loadn => loadn.IN1
+resetn => resetn.IN1
+Enable => Enable.IN1
+out <= Register:r1.O
+
+
+|part3|shiftRegister:unit2|subcircuit:unit5|mux2to1:m2
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|shiftRegister:unit2|subcircuit:unit5|Register:r1
+Reset_b => O.OUTPUTSELECT
+I => O.DATAB
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+enable => O~reg0.CLK
+
+
+|part3|shiftRegister:unit2|subcircuit:unit6
+loadValue => loadValue.IN1
+Qprev => Qprev.IN1
+loadn => loadn.IN1
+resetn => resetn.IN1
+Enable => Enable.IN1
+out <= Register:r1.O
+
+
+|part3|shiftRegister:unit2|subcircuit:unit6|mux2to1:m2
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|shiftRegister:unit2|subcircuit:unit6|Register:r1
+Reset_b => O.OUTPUTSELECT
+I => O.DATAB
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+enable => O~reg0.CLK
+
+
+|part3|shiftRegister:unit2|subcircuit:unit7
+loadValue => loadValue.IN1
+Qprev => Qprev.IN1
+loadn => loadn.IN1
+resetn => resetn.IN1
+Enable => Enable.IN1
+out <= Register:r1.O
+
+
+|part3|shiftRegister:unit2|subcircuit:unit7|mux2to1:m2
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|shiftRegister:unit2|subcircuit:unit7|Register:r1
+Reset_b => O.OUTPUTSELECT
+I => O.DATAB
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+enable => O~reg0.CLK
+
+
+|part3|shiftRegister:unit2|subcircuit:unit8
+loadValue => loadValue.IN1
+Qprev => Qprev.IN1
+loadn => loadn.IN1
+resetn => resetn.IN1
+Enable => Enable.IN1
+out <= Register:r1.O
+
+
+|part3|shiftRegister:unit2|subcircuit:unit8|mux2to1:m2
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|shiftRegister:unit2|subcircuit:unit8|Register:r1
+Reset_b => O.OUTPUTSELECT
+I => O.DATAB
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+enable => O~reg0.CLK
+
+
+|part3|shiftRegister:unit2|subcircuit:unit9
+loadValue => loadValue.IN1
+Qprev => Qprev.IN1
+loadn => loadn.IN1
+resetn => resetn.IN1
+Enable => Enable.IN1
+out <= Register:r1.O
+
+
+|part3|shiftRegister:unit2|subcircuit:unit9|mux2to1:m2
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|shiftRegister:unit2|subcircuit:unit9|Register:r1
+Reset_b => O.OUTPUTSELECT
+I => O.DATAB
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+enable => O~reg0.CLK
+
+
+|part3|shiftRegister:unit2|subcircuit:unit10
+loadValue => loadValue.IN1
+Qprev => Qprev.IN1
+loadn => loadn.IN1
+resetn => resetn.IN1
+Enable => Enable.IN1
+out <= Register:r1.O
+
+
+|part3|shiftRegister:unit2|subcircuit:unit10|mux2to1:m2
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|shiftRegister:unit2|subcircuit:unit10|Register:r1
+Reset_b => O.OUTPUTSELECT
+I => O.DATAB
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+enable => O~reg0.CLK
+
+
+|part3|shiftRegister:unit2|subcircuit:unit11
+loadValue => loadValue.IN1
+Qprev => Qprev.IN1
+loadn => loadn.IN1
+resetn => resetn.IN1
+Enable => Enable.IN1
+out <= Register:r1.O
+
+
+|part3|shiftRegister:unit2|subcircuit:unit11|mux2to1:m2
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|shiftRegister:unit2|subcircuit:unit11|Register:r1
+Reset_b => O.OUTPUTSELECT
+I => O.DATAB
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+enable => O~reg0.CLK
+
+
+|part3|shiftRegister:unit2|subcircuit:unit12
+loadValue => loadValue.IN1
+Qprev => Qprev.IN1
+loadn => loadn.IN1
+resetn => resetn.IN1
+Enable => Enable.IN1
+out <= Register:r1.O
+
+
+|part3|shiftRegister:unit2|subcircuit:unit12|mux2to1:m2
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|shiftRegister:unit2|subcircuit:unit12|Register:r1
+Reset_b => O.OUTPUTSELECT
+I => O.DATAB
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+enable => O~reg0.CLK
+
+
+|part3|shiftRegister:unit2|subcircuit:unit13
+loadValue => loadValue.IN1
+Qprev => Qprev.IN1
+loadn => loadn.IN1
+resetn => resetn.IN1
+Enable => Enable.IN1
+out <= Register:r1.O
+
+
+|part3|shiftRegister:unit2|subcircuit:unit13|mux2to1:m2
+x => m.DATAA
+y => m.DATAB
+s => m.OUTPUTSELECT
+m <= m.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part3|shiftRegister:unit2|subcircuit:unit13|Register:r1
+Reset_b => O.OUTPUTSELECT
+I => O.DATAB
+O <= O~reg0.DB_MAX_OUTPUT_PORT_TYPE
+enable => O~reg0.CLK
+
+

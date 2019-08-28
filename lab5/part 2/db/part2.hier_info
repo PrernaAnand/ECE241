@@ -1,0 +1,196 @@
+|part2
+HEX0[0] <= Display:D1.O
+HEX0[1] <= Display:D1.O
+HEX0[2] <= Display:D1.O
+HEX0[3] <= Display:D1.O
+HEX0[4] <= Display:D1.O
+HEX0[5] <= Display:D1.O
+HEX0[6] <= Display:D1.O
+SW[0] => SW[0].IN1
+SW[1] => SW[1].IN1
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[1] => ~NO_FANOUT~
+CLOCK_50 => CLOCK_50.IN5
+
+
+|part2|mux:m1
+c1 => always0.IN0
+c1 => muxOut[25].IN1
+c1 => always0.IN0
+c1 => always0.IN0
+c0 => always0.IN1
+c0 => always0.IN1
+c0 => always0.IN1
+muxOut[0] <= muxOut[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[1] <= muxOut[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[2] <= muxOut[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[3] <= muxOut[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[4] <= muxOut[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[5] <= muxOut[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[6] <= muxOut[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[7] <= muxOut[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[8] <= muxOut[8]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[9] <= muxOut[9]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[10] <= muxOut[10]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[11] <= muxOut[11]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[12] <= muxOut[12]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[13] <= muxOut[13]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[14] <= muxOut[14]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[15] <= muxOut[15]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[16] <= muxOut[16]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[17] <= muxOut[17]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[18] <= muxOut[18]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[19] <= muxOut[19]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[20] <= muxOut[20]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[21] <= muxOut[21]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[22] <= muxOut[22]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[23] <= muxOut[23]$latch.DB_MAX_OUTPUT_PORT_TYPE
+muxOut[24] <= <GND>
+muxOut[25] <= muxOut[25]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|rateDivideCount:c1
+pulseWidth[0] => ~NO_FANOUT~
+pulseWidth[1] => ~NO_FANOUT~
+pulseWidth[2] => ~NO_FANOUT~
+pulseWidth[3] => ~NO_FANOUT~
+pulseWidth[4] => ~NO_FANOUT~
+pulseWidth[5] => ~NO_FANOUT~
+pulseWidth[6] => ~NO_FANOUT~
+pulseWidth[7] => ~NO_FANOUT~
+pulseWidth[8] => ~NO_FANOUT~
+pulseWidth[9] => ~NO_FANOUT~
+pulseWidth[10] => ~NO_FANOUT~
+pulseWidth[11] => ~NO_FANOUT~
+pulseWidth[12] => ~NO_FANOUT~
+pulseWidth[13] => ~NO_FANOUT~
+pulseWidth[14] => ~NO_FANOUT~
+pulseWidth[15] => ~NO_FANOUT~
+pulseWidth[16] => ~NO_FANOUT~
+pulseWidth[17] => ~NO_FANOUT~
+pulseWidth[18] => ~NO_FANOUT~
+pulseWidth[19] => ~NO_FANOUT~
+pulseWidth[20] => ~NO_FANOUT~
+pulseWidth[21] => ~NO_FANOUT~
+pulseWidth[22] => ~NO_FANOUT~
+pulseWidth[23] => ~NO_FANOUT~
+pulseWidth[24] => ~NO_FANOUT~
+pulseWidth[25] => ~NO_FANOUT~
+pulse <= pulse~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk => pulse~reg0.CLK
+
+
+|part2|TFF_AND:T1
+Clock => Clock.IN1
+Clear_b => Clear_b.IN1
+Enable => Enable.IN1
+Q <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|TFF_AND:T1|T_FF:T1
+clock => ~NO_FANOUT~
+clear_b => q~reg0.ACLR
+enable => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|TFF_AND:T2
+Clock => Clock.IN1
+Clear_b => Clear_b.IN1
+Enable => Enable.IN1
+Q <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|TFF_AND:T2|T_FF:T1
+clock => ~NO_FANOUT~
+clear_b => q~reg0.ACLR
+enable => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|TFF_AND:T3
+Clock => Clock.IN1
+Clear_b => Clear_b.IN1
+Enable => Enable.IN1
+Q <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|TFF_AND:T3|T_FF:T1
+clock => ~NO_FANOUT~
+clear_b => q~reg0.ACLR
+enable => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|TFF_AND:T4
+Clock => Clock.IN1
+Clear_b => Clear_b.IN1
+Enable => Enable.IN1
+Q <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|TFF_AND:T4|T_FF:T1
+clock => ~NO_FANOUT~
+clear_b => q~reg0.ACLR
+enable => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part2|Display:D1
+I[0] => I[0].IN1
+I[1] => I[1].IN1
+I[2] => I[2].IN1
+I[3] => I[3].IN1
+O[0] <= HEX:H1.l0
+O[1] <= HEX:H1.l1
+O[2] <= HEX:H1.l2
+O[3] <= HEX:H1.l3
+O[4] <= HEX:H1.l4
+O[5] <= HEX:H1.l5
+O[6] <= HEX:H1.l6
+
+
+|part2|Display:D1|HEX:H1
+c0 => l0.IN1
+c0 => l0.IN1
+c0 => l0.IN1
+c0 => l1.IN1
+c0 => l1.IN1
+c0 => l3.IN1
+c0 => l3.IN1
+c0 => l4.IN1
+c0 => l0.IN1
+c0 => l1.IN1
+c0 => l1.IN1
+c0 => l1.IN1
+c0 => l2.IN1
+c0 => l3.IN1
+c0 => l6.IN1
+c1 => l0.IN1
+c1 => l1.IN1
+c1 => l1.IN1
+c1 => l2.IN1
+c1 => l0.IN1
+c1 => l0.IN1
+c1 => l0.IN1
+c1 => l3.IN1
+c2 => l0.IN0
+c2 => l0.IN0
+c2 => l0.IN0
+c2 => l0.IN0
+c3 => l0.IN1
+c3 => l0.IN1
+c3 => l0.IN1
+c3 => l0.IN1
+l0 <= l0.DB_MAX_OUTPUT_PORT_TYPE
+l1 <= l1.DB_MAX_OUTPUT_PORT_TYPE
+l2 <= l2.DB_MAX_OUTPUT_PORT_TYPE
+l3 <= l3.DB_MAX_OUTPUT_PORT_TYPE
+l4 <= l4.DB_MAX_OUTPUT_PORT_TYPE
+l5 <= l5.DB_MAX_OUTPUT_PORT_TYPE
+l6 <= l6.DB_MAX_OUTPUT_PORT_TYPE
+
+

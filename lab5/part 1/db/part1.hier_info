@@ -1,0 +1,250 @@
+|part1
+SW[0] => SW[0].IN8
+SW[1] => SW[1].IN1
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[0] => _.IN1
+KEY[1] => ~NO_FANOUT~
+HEX0[0] => HEX0[0].IN1
+HEX0[1] => HEX0[1].IN1
+HEX0[2] => HEX0[2].IN1
+HEX0[3] => HEX0[3].IN1
+HEX0[4] => HEX0[4].IN1
+HEX0[5] => HEX0[5].IN1
+HEX0[6] => HEX0[6].IN1
+HEX1[0] => HEX1[0].IN1
+HEX1[1] => HEX1[1].IN1
+HEX1[2] => HEX1[2].IN1
+HEX1[3] => HEX1[3].IN1
+HEX1[4] => HEX1[4].IN1
+HEX1[5] => HEX1[5].IN1
+HEX1[6] => HEX1[6].IN1
+
+
+|part1|TFF_AND:Q0
+Clock => Clock.IN1
+Clear_b => Clear_b.IN1
+Enable => Enable.IN1
+Q <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|TFF_AND:Q0|T_FF:T1
+clock => q~reg0.CLK
+clear_b => q~reg0.ACLR
+enable => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|TFF_AND:Q1
+Clock => Clock.IN1
+Clear_b => Clear_b.IN1
+Enable => Enable.IN1
+Q <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|TFF_AND:Q1|T_FF:T1
+clock => q~reg0.CLK
+clear_b => q~reg0.ACLR
+enable => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|TFF_AND:Q2
+Clock => Clock.IN1
+Clear_b => Clear_b.IN1
+Enable => Enable.IN1
+Q <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|TFF_AND:Q2|T_FF:T1
+clock => q~reg0.CLK
+clear_b => q~reg0.ACLR
+enable => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|TFF_AND:Q3
+Clock => Clock.IN1
+Clear_b => Clear_b.IN1
+Enable => Enable.IN1
+Q <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|TFF_AND:Q3|T_FF:T1
+clock => q~reg0.CLK
+clear_b => q~reg0.ACLR
+enable => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|TFF_AND:Q4
+Clock => Clock.IN1
+Clear_b => Clear_b.IN1
+Enable => Enable.IN1
+Q <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|TFF_AND:Q4|T_FF:T1
+clock => q~reg0.CLK
+clear_b => q~reg0.ACLR
+enable => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|TFF_AND:Q5
+Clock => Clock.IN1
+Clear_b => Clear_b.IN1
+Enable => Enable.IN1
+Q <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|TFF_AND:Q5|T_FF:T1
+clock => q~reg0.CLK
+clear_b => q~reg0.ACLR
+enable => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|TFF_AND:Q6
+Clock => Clock.IN1
+Clear_b => Clear_b.IN1
+Enable => Enable.IN1
+Q <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|TFF_AND:Q6|T_FF:T1
+clock => q~reg0.CLK
+clear_b => q~reg0.ACLR
+enable => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|TFF_AND:Q7
+Clock => Clock.IN1
+Clear_b => Clear_b.IN1
+Enable => Enable.IN1
+Q <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|TFF_AND:Q7|T_FF:T1
+clock => q~reg0.CLK
+clear_b => q~reg0.ACLR
+enable => q.OUTPUTSELECT
+q <= q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|Display:D1
+I[0] => I[0].IN1
+I[1] => I[1].IN1
+I[2] => I[2].IN1
+I[3] => I[3].IN1
+O[0] <= HEX:H1.l0
+O[1] <= HEX:H1.l1
+O[2] <= HEX:H1.l2
+O[3] <= HEX:H1.l3
+O[4] <= HEX:H1.l4
+O[5] <= HEX:H1.l5
+O[6] <= HEX:H1.l6
+
+
+|part1|Display:D1|HEX:H1
+c0 => l0.IN1
+c0 => l0.IN1
+c0 => l0.IN1
+c0 => l1.IN1
+c0 => l1.IN1
+c0 => l3.IN1
+c0 => l3.IN1
+c0 => l4.IN1
+c0 => l0.IN1
+c0 => l1.IN1
+c0 => l1.IN1
+c0 => l1.IN1
+c0 => l2.IN1
+c0 => l3.IN1
+c0 => l6.IN1
+c1 => l0.IN1
+c1 => l1.IN1
+c1 => l1.IN1
+c1 => l2.IN1
+c1 => l0.IN1
+c1 => l0.IN1
+c1 => l0.IN1
+c1 => l3.IN1
+c2 => l0.IN0
+c2 => l0.IN0
+c2 => l0.IN0
+c2 => l0.IN0
+c3 => l0.IN1
+c3 => l0.IN1
+c3 => l0.IN1
+c3 => l0.IN1
+l0 <= l0.DB_MAX_OUTPUT_PORT_TYPE
+l1 <= l1.DB_MAX_OUTPUT_PORT_TYPE
+l2 <= l2.DB_MAX_OUTPUT_PORT_TYPE
+l3 <= l3.DB_MAX_OUTPUT_PORT_TYPE
+l4 <= l4.DB_MAX_OUTPUT_PORT_TYPE
+l5 <= l5.DB_MAX_OUTPUT_PORT_TYPE
+l6 <= l6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|part1|Display:D2
+I[0] => I[0].IN1
+I[1] => I[1].IN1
+I[2] => I[2].IN1
+I[3] => I[3].IN1
+O[0] <= HEX:H1.l0
+O[1] <= HEX:H1.l1
+O[2] <= HEX:H1.l2
+O[3] <= HEX:H1.l3
+O[4] <= HEX:H1.l4
+O[5] <= HEX:H1.l5
+O[6] <= HEX:H1.l6
+
+
+|part1|Display:D2|HEX:H1
+c0 => l0.IN1
+c0 => l0.IN1
+c0 => l0.IN1
+c0 => l1.IN1
+c0 => l1.IN1
+c0 => l3.IN1
+c0 => l3.IN1
+c0 => l4.IN1
+c0 => l0.IN1
+c0 => l1.IN1
+c0 => l1.IN1
+c0 => l1.IN1
+c0 => l2.IN1
+c0 => l3.IN1
+c0 => l6.IN1
+c1 => l0.IN1
+c1 => l1.IN1
+c1 => l1.IN1
+c1 => l2.IN1
+c1 => l0.IN1
+c1 => l0.IN1
+c1 => l0.IN1
+c1 => l3.IN1
+c2 => l0.IN0
+c2 => l0.IN0
+c2 => l0.IN0
+c2 => l0.IN0
+c3 => l0.IN1
+c3 => l0.IN1
+c3 => l0.IN1
+c3 => l0.IN1
+l0 <= l0.DB_MAX_OUTPUT_PORT_TYPE
+l1 <= l1.DB_MAX_OUTPUT_PORT_TYPE
+l2 <= l2.DB_MAX_OUTPUT_PORT_TYPE
+l3 <= l3.DB_MAX_OUTPUT_PORT_TYPE
+l4 <= l4.DB_MAX_OUTPUT_PORT_TYPE
+l5 <= l5.DB_MAX_OUTPUT_PORT_TYPE
+l6 <= l6.DB_MAX_OUTPUT_PORT_TYPE
+
+

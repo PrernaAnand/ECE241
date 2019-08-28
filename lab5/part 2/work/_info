@@ -1,0 +1,134 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Prerna/Desktop/CAD/Lab5/part 2
+vDisplay
+Z1 !s110 1540347047
+!i10b 1
+!s100 gmnR^aQ0AHoJ5iiiH1QOj1
+I5;Dk;Rl]l@FGA:l8LR8Uo1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1540345730
+Z4 8part2.v
+Z5 Fpart2.v
+L0 87
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1540347046.000000
+Z8 !s107 part2.v|
+Z9 !s90 -reportprogress|300|part2.v|
+!i113 1
+Z10 tCvgOpt 0
+n@display
+vHEX
+R1
+!i10b 1
+!s100 B66ELF`U<MKB_LWTz<><D1
+IMaB>?cGE5]bfJ?XoHWoOd0
+R2
+R0
+R3
+R4
+R5
+L0 95
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@h@e@x
+vmux
+R1
+!i10b 1
+!s100 ;ckbDfj3HMnOHD5>hM`WT0
+I9Md]AF_O^SoFioAY[c98Q1
+R2
+R0
+R3
+R4
+R5
+L0 39
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vpart2
+R1
+!i10b 1
+!s100 X4Q;C5cZV=aDk[Si]`17m0
+IY2WX8jHd_:1N`E208BCee2
+R2
+R0
+R3
+R4
+R5
+L0 2
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vrateDivideCount
+R1
+!i10b 1
+!s100 K^`GTm50@@0NTO:OlM[b12
+I`dEe;eHIOezb[J47=TnJ02
+R2
+R0
+R3
+R4
+R5
+L0 60
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+nrate@divide@count
+vupCounter
+R1
+!i10b 1
+!s100 OcF[SG9V>fdS;?0KmV0;F3
+IY1gI@bUA@0YaNi<1=0lFI0
+R2
+R0
+R3
+R4
+R5
+L0 22
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+nup@counter

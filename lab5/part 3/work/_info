@@ -1,0 +1,298 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Prerna/Desktop/CAD/Lab5/part 3
+vDflipflop
+Z1 !s110 1540350301
+!i10b 1
+!s100 U^l^Ge25E3;HTWmUkofFV2
+I_`bf@D3aC`8lidaUZNlK]3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1540350295
+Z4 8part3.v
+Z5 Fpart3.v
+L0 63
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1540350301.000000
+Z8 !s107 part3.v|
+Z9 !s90 -reportprogress|300|part3.v|
+!i113 1
+Z10 tCvgOpt 0
+n@dflipflop
+vdgate
+R1
+!i10b 1
+!s100 GFaRiW9eHmKh0H^3YJU?B2
+IN3Z[UBA0emF>4F0^PnlaK3
+R2
+R0
+R3
+R4
+R5
+L0 73
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vLab4Part3
+!s110 1540351123
+!i10b 1
+!s100 mg1`RSZ^BebSgV8@RIcmd1
+I>PCBik_XO_<cD`9aU9F8d0
+R2
+R0
+w1540351116
+R4
+R5
+L0 259
+R6
+r1
+!s85 0
+31
+!s108 1540351123.000000
+R8
+R9
+!i113 1
+R10
+n@lab4@part3
+vLab5Part3
+!s110 1540350057
+!i10b 1
+!s100 a:mJ1QMoS4`AAiRMa@ado1
+IXTm96WzgC^kakgH:ZSJXP1
+R2
+R0
+w1540347611
+R4
+R5
+L0 3
+R6
+r1
+!s85 0
+31
+!s108 1540350056.000000
+R8
+R9
+!i113 1
+R10
+n@lab5@part3
+vletterMux
+Z11 !s110 1540351653
+!i10b 1
+!s100 dRm=OhMGeJ[1Id=clC]o_0
+Io=5Rjco:j^kZR7;iXofX=1
+R2
+R0
+Z12 w1540351648
+R4
+R5
+L0 6
+R6
+r1
+!s85 0
+31
+Z13 !s108 1540351653.000000
+R8
+R9
+!i113 1
+R10
+nletter@mux
+vmux
+R1
+!i10b 1
+!s100 YY2B8<Vj9nmG?>;iCnSW42
+INSRCi4aIkEhSaPEnlU:8A3
+R2
+R0
+R3
+R4
+R5
+L0 19
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vmux2
+R1
+!i10b 1
+!s100 zN2BEY8a:2EC6AiTO56TI0
+I53[jTjz=6T0BGZ`ifo0h:2
+R2
+R0
+R3
+R4
+R5
+L0 87
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vmux2to1
+R11
+!i10b 1
+!s100 PEHYnB6C4IYL:;B3F`QAi0
+Id3l>Wbd^k8]1@kNjSbl3T1
+R2
+R0
+R12
+R4
+R5
+L0 129
+R6
+r1
+!s85 0
+31
+R13
+R8
+R9
+!i113 1
+R10
+vpart3
+R11
+!i10b 1
+!s100 hY5K=E5_ZGjE?G`RXC@DD0
+Iln7kKJIW5^ITPeOdVUbA`3
+R2
+R0
+R12
+R4
+R5
+L0 254
+R6
+r1
+!s85 0
+31
+R13
+R8
+R9
+!i113 1
+R10
+vrateDivideCount
+R11
+!i10b 1
+!s100 K?S5?`Y@nU7^lB1^oHnKP3
+Ic8ZNDJ]bVWCCH;UoCDjzI0
+R2
+R0
+R12
+R4
+R5
+L0 201
+R6
+r1
+!s85 0
+31
+R13
+R8
+R9
+!i113 1
+R10
+nrate@divide@count
+vrateDivider
+R1
+!i10b 1
+!s100 LaVcO?Kb>@0cl?X[>:8>>3
+IEBBZNAU@`jWM4:TiFU3Yn2
+R2
+R0
+R3
+R4
+R5
+L0 39
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+nrate@divider
+vRegister
+R11
+!i10b 1
+!s100 ;NLeE]V2Y>moA]JmjWL4I1
+IQCMDHI7ge[zA47U7N1F]Q1
+R2
+R0
+R12
+R4
+R5
+L0 155
+R6
+r1
+!s85 0
+31
+R13
+R8
+R9
+!i113 1
+R10
+n@register
+vshiftRegister
+R11
+!i10b 1
+!s100 dnnhz`JZKLeZ3SD9S6;lI1
+I?a2MmO<KlCT0kW_fKgkWY3
+R2
+R0
+R12
+R4
+R5
+L0 56
+R6
+r1
+!s85 0
+31
+R13
+R8
+R9
+!i113 1
+R10
+nshift@register
+vsubcircuit
+R11
+!i10b 1
+!s100 n:H5W5bVVZd9eAhM=D_o;3
+I[[gJB6P=gjaO`8lJfJ]=A3
+R2
+R0
+R12
+R4
+R5
+L0 107
+R6
+r1
+!s85 0
+31
+R13
+R8
+R9
+!i113 1
+R10
