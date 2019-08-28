@@ -1,0 +1,91 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Prerna/Desktop/CAD/Lab4/part3
+vmux2to1
+Z1 !s110 1539736940
+!i10b 1
+!s100 M=<9jA0;e5AkVGh64C3z53
+IMIJ?eXbN?IkbOS4kG1MD<0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1539637154
+Z4 8part3.v
+Z5 Fpart3.v
+L0 33
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1539736940.000000
+Z8 !s107 part3.v|
+Z9 !s90 -reportprogress|300|part3.v|
+!i113 1
+Z10 tCvgOpt 0
+vpart3
+R1
+!i10b 1
+!s100 U9:Qof0W3aMIzSllze9]O3
+IQgn]8EMBDZ51bf<06:K?o3
+R2
+R0
+R3
+R4
+R5
+L0 1
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vRegister
+R1
+!i10b 1
+!s100 m9ML7YBohUkFe?QiYKZF>0
+IoE@CV6fj`JH5QTiVYVOFK3
+R2
+R0
+R3
+R4
+R5
+L0 45
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@register
+vsubcircuit
+R1
+!i10b 1
+!s100 b63;_dW?7IfiaW6ia0S]L3
+IE3jk1U<6DKj_e=<3L1IR42
+R2
+R0
+R3
+R4
+R5
+L0 21
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10

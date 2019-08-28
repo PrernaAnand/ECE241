@@ -1,0 +1,36 @@
+module part3();
+
+module mux2to1(x, y, s, m);
+    input x; //select 0
+    input y; //select 1
+    input s; //select signal
+    output m; //output
+  
+    //assign m = s & y | ~s & x;
+    // OR
+    assign m = s ? y : x;
+
+endmodule
+
+module Register(Clock, Reset_b, I, O);
+
+	  input Clock;
+	  input Reset_b;
+	  input I;
+	  output reg O; //output
+	  reg q;
+	  always@(posedge Clock)
+	  begin
+		 if(Reset_b == 1'b0)
+		  begin
+			q <= 0;
+			O = 1'b0;
+		  end
+		 else
+		  begin	
+			q <= I;
+			O = I;
+	     end  
+	  end
+	  
+endmodule
