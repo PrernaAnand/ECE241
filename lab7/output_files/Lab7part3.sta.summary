@@ -1,0 +1,213 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -4.033
+TNS   : -140.478
+
+Type  : Slow 1100mV 85C Model Setup 'FrameCounter:fc|count[0]'
+Slack : -2.994
+TNS   : -51.658
+
+Type  : Slow 1100mV 85C Model Setup 'DelayCounter:dc|count[0]'
+Slack : -2.818
+TNS   : -10.683
+
+Type  : Slow 1100mV 85C Model Setup 'VGA|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 35.738
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.163
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'VGA|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.345
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'FrameCounter:fc|count[0]'
+Slack : 0.669
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'DelayCounter:dc|count[0]'
+Slack : 0.809
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'FrameCounter:fc|count[0]'
+Slack : -0.394
+TNS   : -11.973
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'DelayCounter:dc|count[0]'
+Slack : -0.394
+TNS   : -2.434
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'VGA|mypll|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.666
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.876
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'VGA|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 18.776
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -3.909
+TNS   : -130.979
+
+Type  : Slow 1100mV 0C Model Setup 'FrameCounter:fc|count[0]'
+Slack : -3.088
+TNS   : -52.804
+
+Type  : Slow 1100mV 0C Model Setup 'DelayCounter:dc|count[0]'
+Slack : -2.760
+TNS   : -10.518
+
+Type  : Slow 1100mV 0C Model Setup 'VGA|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 35.783
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'CLOCK_50'
+Slack : -0.064
+TNS   : -0.064
+
+Type  : Slow 1100mV 0C Model Hold 'VGA|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.322
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'FrameCounter:fc|count[0]'
+Slack : 0.657
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'DelayCounter:dc|count[0]'
+Slack : 0.731
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'FrameCounter:fc|count[0]'
+Slack : -0.394
+TNS   : -12.250
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'DelayCounter:dc|count[0]'
+Slack : -0.394
+TNS   : -2.608
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'VGA|mypll|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.666
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.836
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'VGA|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 18.763
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'CLOCK_50'
+Slack : -2.926
+TNS   : -104.595
+
+Type  : Fast 1100mV 85C Model Setup 'DelayCounter:dc|count[0]'
+Slack : -1.661
+TNS   : -6.146
+
+Type  : Fast 1100mV 85C Model Setup 'FrameCounter:fc|count[0]'
+Slack : -1.304
+TNS   : -21.947
+
+Type  : Fast 1100mV 85C Model Setup 'VGA|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 37.476
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'CLOCK_50'
+Slack : 0.140
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'VGA|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.201
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'FrameCounter:fc|count[0]'
+Slack : 0.301
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'DelayCounter:dc|count[0]'
+Slack : 0.590
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'DelayCounter:dc|count[0]'
+Slack : 0.028
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'FrameCounter:fc|count[0]'
+Slack : 0.069
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'VGA|mypll|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.666
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.808
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'VGA|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 18.893
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CLOCK_50'
+Slack : -2.440
+TNS   : -84.517
+
+Type  : Fast 1100mV 0C Model Setup 'DelayCounter:dc|count[0]'
+Slack : -1.427
+TNS   : -5.355
+
+Type  : Fast 1100mV 0C Model Setup 'FrameCounter:fc|count[0]'
+Slack : -1.204
+TNS   : -19.727
+
+Type  : Fast 1100mV 0C Model Setup 'VGA|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 37.684
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'CLOCK_50'
+Slack : 0.096
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'VGA|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 0.183
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'FrameCounter:fc|count[0]'
+Slack : 0.268
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'DelayCounter:dc|count[0]'
+Slack : 0.468
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'DelayCounter:dc|count[0]'
+Slack : 0.044
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'FrameCounter:fc|count[0]'
+Slack : 0.092
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'VGA|mypll|altpll_component|auto_generated|generic_pll1~FRACTIONAL_PLL|vcoph[0]'
+Slack : 1.666
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : 8.802
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'VGA|mypll|altpll_component|auto_generated|generic_pll1~PLL_OUTPUT_COUNTER|divclk'
+Slack : 18.888
+TNS   : 0.000
+
+------------------------------------------------------------

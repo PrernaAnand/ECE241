@@ -1,0 +1,153 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Prerna/Desktop/CAD/Lab7
+vcontrol
+Z1 !s110 1541575411
+!i10b 1
+!s100 TfP88X=k<F?gO2hNRIKno3
+IRmST6=RlekI[87cF@n=QP2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1541575405
+Z4 8Lab7part3.v
+Z5 FLab7part3.v
+L0 134
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1541575410.000000
+Z8 !s107 Lab7part3.v|
+Z9 !s90 -reportprogress|300|Lab7part3.v|
+!i113 1
+Z10 tCvgOpt 0
+vdatapath
+R1
+!i10b 1
+!s100 LNDNkS>zj<5`oj6>nz7cA1
+IAgYn=a7iGY8BLFc@H<fR63
+R2
+R0
+R3
+R4
+R5
+L0 205
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vDelayCounter
+R1
+!i10b 1
+!s100 fYOli@WB@0LB]36QlF?Yl2
+I@PDX`I_Gb?z5fHPV6o@O31
+R2
+R0
+R3
+R4
+R5
+L0 343
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@delay@counter
+vFrameCounter
+R1
+!i10b 1
+!s100 ELYTi6gmfPhGDQo1GPJ7]1
+I?<Fm7H5NOY_VEKOWUb7=P1
+R2
+R0
+R3
+R4
+R5
+L0 319
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@frame@counter
+vLab7part3
+R1
+!i10b 1
+!s100 ^S>EkeZ[6;neh;GZ_j^YI3
+IW0KW2;eRkTXX[@@]OYI410
+R2
+R0
+R3
+R4
+R5
+L0 3
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+n@lab7part3
+vx_counter
+R1
+!i10b 1
+!s100 nzb<`b@Ime:_bh7kc<aio1
+I=>jXmi==3aP_8MBA71G9i2
+R2
+R0
+R3
+R4
+R5
+L0 259
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+vy_counter
+R1
+!i10b 1
+!s100 0Mk5ozR1DQLNafaelHD:93
+IX3LXBZL9549Re8T3:GT7@2
+R2
+R0
+R3
+R4
+R5
+L0 289
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10

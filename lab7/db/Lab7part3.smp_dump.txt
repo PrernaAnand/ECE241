@@ -1,0 +1,7 @@
+
+State Machine - |Lab7part3|control:c|current_state
+Name current_state.S_ERASE current_state.S_HOLD current_state.S_PLOT current_state.S_LOAD 
+current_state.S_LOAD 0 0 0 0 
+current_state.S_PLOT 0 0 1 1 
+current_state.S_HOLD 0 1 0 1 
+current_state.S_ERASE 1 0 0 1 
